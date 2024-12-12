@@ -3,7 +3,13 @@
 
 # Kotlin/Native Template
 
+This project is the Kotlin Native API for OpenVR.
+
 A mostly-empty template to get started creating a Kotlin/Native project. 
+
+[OpenVR](https://github.com/ValveSoftware/openvr)
+[OpenVR Doc](https://github.com/ValveSoftware/openvr/blob/master/docs/Driver_API_Documentation.md)
+[Kotlin Native C Interop](https://book.kotlincn.net/text/native-c-interop.html)
 
 ## Getting Started
 

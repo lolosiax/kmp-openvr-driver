@@ -29,6 +29,14 @@ kotlin {
                 entryPoint = "main"
             }
         }
+        compilations.getByName("main") {
+            cinterops {
+                create("openvr_capi") {
+                    includeDirs("src/nativeInterop/cinterop")
+                    packageName = "top.lolosia.openvr.capi"
+                }
+            }
+        }
     }
 
     sourceSets {
