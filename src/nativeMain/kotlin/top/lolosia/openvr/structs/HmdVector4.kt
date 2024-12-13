@@ -4,9 +4,10 @@ import kotlinx.cinterop.ExperimentalForeignApi
 import kotlinx.cinterop.get
 import kotlinx.cinterop.set
 import top.lolosia.openvr.capi.HmdVector3_t
+import top.lolosia.openvr.capi.HmdVector4_t
 
 @OptIn(ExperimentalForeignApi::class)
-value class HmdVector4(val value: HmdVector3_t) {
+value class HmdVector4(val value: HmdVector4_t) {
     var x
         get() = value.v[0]
         set(v) = value.v.set(0, v)

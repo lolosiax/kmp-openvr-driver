@@ -1,7 +1,10 @@
 package top.lolosia.openvr.structs
 
 import kotlinx.cinterop.ExperimentalForeignApi
-import top.lolosia.openvr.capi.HmdQuaternion_t
+import top.lolosia.openvr.capi.HmdQuaternionf_t
 
 @OptIn(ExperimentalForeignApi::class)
-typealias HmdQuaternionF = HmdQuaternion_t
+typealias HmdQuaternionF = HmdQuaternionf_t
+
+@OptIn(ExperimentalForeignApi::class)
+inline fun HmdQuaternionF(value: HmdQuaternionf_t): HmdQuaternionF = value
