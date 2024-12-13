@@ -12,6 +12,6 @@ value class VRTextureDepthInfo(val value: VRTextureDepthInfo_t) {
             this.value.handle = value
         }
 
-    val mProjection get() = HmdMatrix44(value.mProjection)
-    val vRange get() = HmdVector2(value.vRange)
+    val projection get() = HmdMatrix44(value.mProjection)
+    val range get() = HmdVector2(value.vRange)
 }

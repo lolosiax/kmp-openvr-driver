@@ -14,19 +14,19 @@ value class VRTextureWithPoseAndDepth(val value: VRTextureWithPoseAndDepth_t) {
             this.value.handle = value
         }
 
-    var eType
+    var type
         get() = TextureType.valueOf(value.eType)
         set(value) {
             this.value.eType = value.value
         }
 
-    var eColorSpace
+    var colorSpace
         get() = ColorSpace.valueOf(value.eColorSpace)
         set(value) {
             this.value.eColorSpace = value.value
         }
 
-    val mDeviceToAbsoluteTracking
+    val deviceToAbsoluteTracking
         get() = HmdMatrix34(value.mDeviceToAbsoluteTracking)
 
     val depth get() = VRTextureDepthInfo(value.depth)
